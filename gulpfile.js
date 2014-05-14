@@ -19,7 +19,7 @@ gulp.task('styles', function() {
     .pipe(sass())
     .pipe(gulp.dest('./css'))
     .pipe(livereload())
-    // .pipe(csso())
-    // .pipe(rename({suffix: '.min'}))
-    // .pipe(gulp.dest('./css'))
+    .pipe(csso())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./css'))
 });
